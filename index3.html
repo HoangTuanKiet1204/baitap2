@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            gap: 30px;
+        }
+
+        .product-images {
+            flex: 1;
+        }
+
+        .product-images img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .product-details {
+            flex: 2;
+        }
+
+        .product-details h1 {
+            margin-bottom: 20px;
+        }
+
+        .price {
+            color: #3498db;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .discount {
+            color: red;
+            font-size: 18px;
+        }
+
+        .rating {
+            margin-bottom: 10px;
+        }
+
+        .in-stock {
+            margin-bottom: 20px;
+        }
+
+        .comments {
+            margin-top: 40px;
+        }
+
+        .comment {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .stars {
+            color: gold;
+        }
+
+        .footer {
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Product section -->
+        <div class="product">
+            <div class="product-images">
+                <img src="image-placeholder.jpg" alt="Main Product Image">
+                <div>
+                    <img src="image-placeholder.jpg" alt="Thumbnail Image" width="100">
+                    <img src="image-placeholder.jpg" alt="Thumbnail Image" width="100">
+                    <img src="image-placeholder.jpg" alt="Thumbnail Image" width="100">
+                    <img src="image-placeholder.jpg" alt="Thumbnail Image" width="100">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Lorem ipsum dolor</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                <!-- Color options -->
+                <p>Color:
+                    <button>Blue</button>
+                    <button>Red</button>
+                    <button>Green</button>
+                </p>
+
+                <!-- Design options -->
+                <p>Design:
+                    <button>Classic</button>
+                    <button>Modern</button>
+                </p>
+
+                <!-- Price and discount -->
+                <p class="price">$129.01</p>
+                <p class="discount">Discount: 10%</p>
+
+                <!-- Rating -->
+                <p class="rating">Rating: ★★★★☆</p>
+
+                <!-- Stock -->
+                <p class="in-stock">In Stocks: 1004</p>
+
+                <!-- Add to cart -->
+                <p>
+                    <input type="number" min="0" value="1" style="width: 50px;">
+                    <button>Add to Cart</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- Comments section -->
+        <div class="comments">
+            <h2>Comments</h2>
+            <div class="comment">
+                <p><strong>Customer 1</strong> (Ha Noi) - 2022-10-10 19:40:01</p>
+                <p>sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                <p class="stars">★★★★★</p>
+            </div>
+            <div class="comment">
+                <p><strong>Customer 1</strong> (Ha Noi) - 2022-10-10 19:40:01</p>
+                <p>sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                <p class="stars">★★★★☆</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>My Shop | 22C Somewhere, Ha Noi | 09876543210</p>
+        </div>
+    </div>
+</body>
+</html>

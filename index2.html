@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #f8e5b1;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header a {
+            text-decoration: none;
+            color: black;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        .header img {
+            border-radius: 50%;
+        }
+        .main {
+            display: flex;
+            padding: 20px;
+        }
+        .poster {
+            width: 40%;
+            margin-right: 20px;
+        }
+        .poster img {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+        }
+        .movie-details {
+            width: 60%;
+        }
+        .movie-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .movie-subtitle {
+            font-size: 18px;
+            color: grey;
+            margin: 10px 0;
+        }
+        .rating {
+            color: green;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 15px;
+            border: none;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .share-btn {
+            background-color: #f8a5a5;
+        }
+        .download-btn {
+            background-color: #f9e79f;
+        }
+        .watch-btn {
+            background-color: #85c1e9;
+        }
+        .tags {
+            margin-top: 20px;
+        }
+        .tags button {
+            padding: 5px 10px;
+            border: none;
+            margin-right: 10px;
+            border-radius: 15px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+        .description {
+            margin: 30px 20px;
+        }
+        .description h2 {
+            margin-bottom: 10px;
+        }
+        .description p {
+            line-height: 1.6;
+        }
+        .cast {
+            margin: 30px 20px;
+        }
+        .cast h2 {
+            margin-bottom: 10px;
+        }
+        .cast-list {
+            display: flex;
+            gap: 15px;
+        }
+        .cast-item {
+            text-align: center;
+        }
+        .cast-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+        .cast-item p {
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #f8e5b1;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <img src="logo.png" alt="Hello Film" width="50">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Top Film</a>
+            <a href="#">Categories</a>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+        <!-- Poster section -->
+        <div class="poster" style="background-color:pink">
+            <img src="movie-poster.png" alt="Movie Poster">
+        </div>
+
+        <!-- Movie details -->
+        <div class="movie-details">
+            <h1 class="movie-title">Unknown Battle</h1>
+            <h2 class="movie-subtitle">Trận Chiến Rzhev (2019)</h2>
+            <p class="rating">2 giờ 17 phút <br> ⭐⭐⭐⭐⭐</p>
+            <div class="buttons">
+                <button class="share-btn">Chia sẻ</button>
+                <button class="download-btn">Tải xuống</button>
+                <button class="watch-btn">Xem phim</button>
+            </div>
+            <div class="tags">
+                <button>Chiến tranh</button>
+                <button>Chính kịch</button>
+            </div>
+            <p><strong>Đạo diễn:</strong> <a href="#">Igor Kopylov</a></p>
+            <p><strong>Quốc gia:</strong> <a href="#">Nga</a></p>
+            <p><strong>Khởi chiếu:</strong> <a href="#">12/05/2019</a></p>
+        </div>
+    </div>
+
+    <!-- Description -->
+    <div class="description">
+        <h2>Mô tả</h2>
+        <p>
+            Bộ phim hành động chiến tranh với nhiều cảnh chiến đấu mãn nhãn, lột tả hết sự khốc liệt và tàn nhẫn của chiến tranh với những con người, những số phận nhỏ bé bị xoáy vào cuộc chiến. Đó là anh chàng Kostya gan dạ nhưng cũng hết sức lém lỉnh, là anh Đại đội trưởng lâu đầu đau về mạng sống của những người đồng chí dưới quyền chỉ huy của mình...
+        </p>
+    </div>
+
+    <!-- Cast -->
+    <div class="cast">
+        <h2>Diễn viên</h2>
+        <div class="cast-list">
+            <div class="cast-item">
+                <img src="actor1.png" alt="Actor 1">
+                <p>Sergey Zharkov</p>
+            </div>
+            <div class="cast-item">
+                <img src="actor2.png" alt="Actor 2">
+                <p>Ivan Batarev</p>
+            </div>
+            <div class="cast-item">
+                <img src="actor3.png" alt="Actor 3">
+                <p>Oleg Gayanov</p>
+            </div>
+            <div class="cast-item">
+                <img src="actor4.png" alt="Actor 4">
+                <p>Arseny Semenov</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 Hello Film</p>
+    </div>
+
+</body>
+</html>
